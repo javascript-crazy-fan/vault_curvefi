@@ -1,0 +1,1286 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20Detailed": {
+        "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:9",
+        "inherit": [
+          "IERC20"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC20Detailed",
+            "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:19"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC20Detailed",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:10"
+            },
+            {
+              "contract": "ERC20Detailed",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:11"
+            },
+            {
+              "contract": "ERC20Detailed",
+              "label": "_decimals",
+              "type": "t_uint8",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:12"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:18",
+        "version": {
+          "withMetadata": "ef25b1ef60e5f88f1d0c8ac6dd06fbf015453099ffdce60d5d09703b912c88c2",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "b0abe8b30dba52b110228be1524178805a01d6220e5dfa5a6949fbf74e34a365",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:186"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "src": "@openzeppelin/contracts/utils/math/SafeMath.sol:16",
+        "version": {
+          "withMetadata": "8fa6469c95b096d6e3a145093567051cae0dab4d03e466daa13f3c17062e68b7",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:18",
+        "version": {
+          "withMetadata": "2a9c668e4406a4fde2d4e32b7b330eaea6fa684a6819e6f48fe9c52594dc90f6",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "VaultToCurve": {
+        "src": "contracts/VaultToCurve.sol:19",
+        "version": {
+          "withMetadata": "2d086827524ef9f3073e92b4895bddd55f9b57dea7b3fbc0915e48bfc570b358",
+          "withoutMetadata": "e116fe16cf0ba6655b456ce72f21593f56e2cf9b97e32eb7c6c8f06f76cd13be",
+          "linkedWithoutMetadata": "e116fe16cf0ba6655b456ce72f21593f56e2cf9b97e32eb7c6c8f06f76cd13be"
+        },
+        "inherit": [
+          "Ownable",
+          "Context",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "methods": [
+          "setUp(address,address,address)",
+          "deposit(uint256)",
+          "withdraw(uint256)",
+          "harvest()",
+          "exchangeRate()",
+          "curveLPTokenStaked()",
+          "curveLPTokenUnstaked()",
+          "curveLPTokenBalance()",
+          "balanceOfAll()",
+          "normalizedBalance()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_Deposit",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:23"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_Swap",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:24"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_LPToken",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:25"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_LPGauge",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:26"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_CRVMinter",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:27"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_CRVToken",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:28"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "exchange_rate_between_DAI_and_LPToken",
+              "type": "t_uint256",
+              "src": "contracts/VaultToCurve.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_DepositY": {
+        "src": "contracts/curvefi/ICurveFi_DepositY.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "add_liquidity(uint256,uint256)",
+          "remove_liquidity(uint256,uint256)",
+          "remove_liquidity_imbalance(uint256,uint256)",
+          "coins(uint256)",
+          "underlying_coins(uint256)",
+          "underlying_coins()",
+          "curve()",
+          "token()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_Gauge": {
+        "src": "contracts/curvefi/ICurveFi_Gauge.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "lp_token()",
+          "crv_token()",
+          "balanceOf(address)",
+          "deposit(uint256)",
+          "withdraw(uint256)",
+          "claimable_tokens(address)",
+          "minter()",
+          "integrate_fraction(address)",
+          "user_checkpoint(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_Minter": {
+        "src": "contracts/curvefi/ICurveFi_Minter.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "mint(address)",
+          "mint_for(address,address)",
+          "minted(address,address)",
+          "toggle_approve_mint(address)",
+          "token()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_SwapY": {
+        "src": "contracts/curvefi/ICurveFi_SwapY.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "add_liquidity(uint256,uint256)",
+          "remove_liquidity(uint256,uint256)",
+          "remove_liquidity_imbalance(uint256,uint256)",
+          "calc_token_amount(uint256,bool)",
+          "balances(address)",
+          "coins(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IYERC20": {
+        "src": "contracts/curvefi/IYERC20.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "name()",
+          "symbol()",
+          "decimals()",
+          "deposit(uint256)",
+          "withdraw(uint256)",
+          "getPricePerFullShare()",
+          "token()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20Detailed": {
+        "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:9",
+        "inherit": [
+          "IERC20"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC20Detailed",
+            "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:19"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC20Detailed",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:10"
+            },
+            {
+              "contract": "ERC20Detailed",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:11"
+            },
+            {
+              "contract": "ERC20Detailed",
+              "label": "_decimals",
+              "type": "t_uint8",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:12"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:18",
+        "version": {
+          "withMetadata": "ef25b1ef60e5f88f1d0c8ac6dd06fbf015453099ffdce60d5d09703b912c88c2",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "b0abe8b30dba52b110228be1524178805a01d6220e5dfa5a6949fbf74e34a365",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:186"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "src": "@openzeppelin/contracts/utils/math/SafeMath.sol:16",
+        "version": {
+          "withMetadata": "8fa6469c95b096d6e3a145093567051cae0dab4d03e466daa13f3c17062e68b7",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:18",
+        "version": {
+          "withMetadata": "2a9c668e4406a4fde2d4e32b7b330eaea6fa684a6819e6f48fe9c52594dc90f6",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "VaultToCurve": {
+        "src": "contracts/VaultToCurve.sol:19",
+        "version": {
+          "withMetadata": "2d086827524ef9f3073e92b4895bddd55f9b57dea7b3fbc0915e48bfc570b358",
+          "withoutMetadata": "e116fe16cf0ba6655b456ce72f21593f56e2cf9b97e32eb7c6c8f06f76cd13be",
+          "linkedWithoutMetadata": "e116fe16cf0ba6655b456ce72f21593f56e2cf9b97e32eb7c6c8f06f76cd13be"
+        },
+        "inherit": [
+          "Ownable",
+          "Context",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "methods": [
+          "setUp(address,address,address)",
+          "deposit(uint256)",
+          "withdraw(uint256)",
+          "harvest()",
+          "exchangeRate()",
+          "curveLPTokenStaked()",
+          "curveLPTokenUnstaked()",
+          "curveLPTokenBalance()",
+          "balanceOfAll()",
+          "normalizedBalance()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_Deposit",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:23"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_Swap",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:24"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_LPToken",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:25"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_LPGauge",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:26"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_CRVMinter",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:27"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_CRVToken",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:28"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "exchange_rate_between_DAI_and_LPToken",
+              "type": "t_uint256",
+              "src": "contracts/VaultToCurve.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_DepositY": {
+        "src": "contracts/curvefi/ICurveFi_DepositY.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "add_liquidity(uint256,uint256)",
+          "remove_liquidity(uint256,uint256)",
+          "remove_liquidity_imbalance(uint256,uint256)",
+          "coins(uint256)",
+          "underlying_coins(uint256)",
+          "underlying_coins()",
+          "curve()",
+          "token()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_Gauge": {
+        "src": "contracts/curvefi/ICurveFi_Gauge.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "lp_token()",
+          "crv_token()",
+          "balanceOf(address)",
+          "deposit(uint256)",
+          "withdraw(uint256)",
+          "claimable_tokens(address)",
+          "minter()",
+          "integrate_fraction(address)",
+          "user_checkpoint(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_Minter": {
+        "src": "contracts/curvefi/ICurveFi_Minter.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "mint(address)",
+          "mint_for(address,address)",
+          "minted(address,address)",
+          "toggle_approve_mint(address)",
+          "token()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_SwapY": {
+        "src": "contracts/curvefi/ICurveFi_SwapY.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "add_liquidity(uint256,uint256)",
+          "remove_liquidity(uint256,uint256)",
+          "remove_liquidity_imbalance(uint256,uint256)",
+          "calc_token_amount(uint256,bool)",
+          "balances(address)",
+          "coins(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IYERC20": {
+        "src": "contracts/curvefi/IYERC20.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "name()",
+          "symbol()",
+          "decimals()",
+          "deposit(uint256)",
+          "withdraw(uint256)",
+          "getPricePerFullShare()",
+          "token()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Ownable": {
+        "src": "@openzeppelin/contracts/access/Ownable.sol:20",
+        "inherit": [
+          "Context"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Ownable",
+            "src": "@openzeppelin/contracts/access/Ownable.sol:28"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Ownable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts/access/Ownable.sol:21"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ERC20Detailed": {
+        "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:9",
+        "inherit": [
+          "IERC20"
+        ],
+        "libraries": [],
+        "methods": [
+          "name()",
+          "symbol()",
+          "decimals()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "ERC20Detailed",
+            "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:19"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ERC20Detailed",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:10"
+            },
+            {
+              "contract": "ERC20Detailed",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:11"
+            },
+            {
+              "contract": "ERC20Detailed",
+              "label": "_decimals",
+              "type": "t_uint8",
+              "src": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol:12"
+            }
+          ],
+          "types": {
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol:18",
+        "version": {
+          "withMetadata": "ef25b1ef60e5f88f1d0c8ac6dd06fbf015453099ffdce60d5d09703b912c88c2",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:9",
+        "version": {
+          "withMetadata": "b0abe8b30dba52b110228be1524178805a01d6220e5dfa5a6949fbf74e34a365",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:186"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "src": "@openzeppelin/contracts/utils/Context.sol:16",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "src": "@openzeppelin/contracts/utils/math/SafeMath.sol:16",
+        "version": {
+          "withMetadata": "8fa6469c95b096d6e3a145093567051cae0dab4d03e466daa13f3c17062e68b7",
+          "withoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db",
+          "linkedWithoutMetadata": "a64c6cf9c6ba9368f5132c93a0196b3204a7963dbb4dd05dfddb4ab23126b8db"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:18",
+        "version": {
+          "withMetadata": "2a9c668e4406a4fde2d4e32b7b330eaea6fa684a6819e6f48fe9c52594dc90f6",
+          "withoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b",
+          "linkedWithoutMetadata": "ac0db523ddc3e330f735df7b3b0b24460531c71290a891170e840f8f67d5ff6b"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:23"
+            },
+            {
+              "contract": "Initializable",
+              "label": "initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:28"
+            },
+            {
+              "contract": "Initializable",
+              "label": "______gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/upgrades-core/contracts/Initializable.sol:63"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "VaultToCurve": {
+        "src": "contracts/VaultToCurve.sol:19",
+        "version": {
+          "withMetadata": "2d086827524ef9f3073e92b4895bddd55f9b57dea7b3fbc0915e48bfc570b358",
+          "withoutMetadata": "e116fe16cf0ba6655b456ce72f21593f56e2cf9b97e32eb7c6c8f06f76cd13be",
+          "linkedWithoutMetadata": "e116fe16cf0ba6655b456ce72f21593f56e2cf9b97e32eb7c6c8f06f76cd13be"
+        },
+        "inherit": [
+          "Ownable",
+          "Context",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "methods": [
+          "setUp(address,address,address)",
+          "deposit(uint256)",
+          "withdraw(uint256)",
+          "harvest()",
+          "exchangeRate()",
+          "curveLPTokenStaked()",
+          "curveLPTokenUnstaked()",
+          "curveLPTokenBalance()",
+          "balanceOfAll()",
+          "normalizedBalance()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_Deposit",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:23"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_Swap",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:24"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_LPToken",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:25"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_LPGauge",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:26"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_CRVMinter",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:27"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "curveFi_CRVToken",
+              "type": "t_address",
+              "src": "contracts/VaultToCurve.sol:28"
+            },
+            {
+              "contract": "VaultToCurve",
+              "label": "exchange_rate_between_DAI_and_LPToken",
+              "type": "t_uint256",
+              "src": "contracts/VaultToCurve.sol:29"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_DepositY": {
+        "src": "contracts/curvefi/ICurveFi_DepositY.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "add_liquidity(uint256,uint256)",
+          "remove_liquidity(uint256,uint256)",
+          "remove_liquidity_imbalance(uint256,uint256)",
+          "coins(uint256)",
+          "underlying_coins(uint256)",
+          "underlying_coins()",
+          "curve()",
+          "token()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_Gauge": {
+        "src": "contracts/curvefi/ICurveFi_Gauge.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "lp_token()",
+          "crv_token()",
+          "balanceOf(address)",
+          "deposit(uint256)",
+          "withdraw(uint256)",
+          "claimable_tokens(address)",
+          "minter()",
+          "integrate_fraction(address)",
+          "user_checkpoint(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_Minter": {
+        "src": "contracts/curvefi/ICurveFi_Minter.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "mint(address)",
+          "mint_for(address,address)",
+          "minted(address,address)",
+          "toggle_approve_mint(address)",
+          "token()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ICurveFi_SwapY": {
+        "src": "contracts/curvefi/ICurveFi_SwapY.sol:9",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "add_liquidity(uint256,uint256)",
+          "remove_liquidity(uint256,uint256)",
+          "remove_liquidity_imbalance(uint256,uint256)",
+          "calc_token_amount(uint256,bool)",
+          "balances(address)",
+          "coins(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IYERC20": {
+        "src": "contracts/curvefi/IYERC20.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)",
+          "name()",
+          "symbol()",
+          "decimals()",
+          "deposit(uint256)",
+          "withdraw(uint256)",
+          "getPricePerFullShare()",
+          "token()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}

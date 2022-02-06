@@ -1,0 +1,515 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/contracts/curvefi/ICurveFi_DepositY.sol": {
+      "lastModificationDate": 1639624921000,
+      "contentHash": "19c7c828322bfd04970a3cba237bf50c",
+      "sourceName": "contracts/curvefi/ICurveFi_DepositY.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ICurveFi_DepositY"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/contracts/VaultToCurve.sol": {
+      "lastModificationDate": 1639632198000,
+      "contentHash": "2ede9360dbe097e8bd26d82a568c8d05",
+      "sourceName": "contracts/VaultToCurve.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/upgrades-core/contracts/Initializable.sol",
+        "@openzeppelin/contracts/utils/Context.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "./curvefi/ICurveFi_DepositY.sol",
+        "./curvefi/ICurveFi_Gauge.sol",
+        "./curvefi/ICurveFi_Minter.sol",
+        "./curvefi/ICurveFi_SwapY.sol",
+        "./curvefi/IYERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "VaultToCurve"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/node_modules/@openzeppelin/upgrades-core/contracts/Initializable.sol": {
+      "lastModificationDate": 1639601862000,
+      "contentHash": "296a6cbbfbd9ec42631c9ab193e77dd0",
+      "sourceName": "@openzeppelin/upgrades-core/contracts/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.10"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1639600552000,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1639600553000,
+      "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1639600553000,
+      "contentHash": "302d9755e46bc69d7058b0cbe7185e37",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/node_modules/@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol": {
+      "lastModificationDate": 1639601702000,
+      "contentHash": "30e135e45da6bbd6d1cc0c5013cbf3c7",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Detailed"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1639600553000,
+      "contentHash": "76814c83c32552ed2b521c816b4d801a",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol": {
+      "lastModificationDate": 1639600553000,
+      "contentHash": "a6a9d6c1f662e922b82c1ba4d81cdd48",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/contracts/curvefi/ICurveFi_Gauge.sol": {
+      "lastModificationDate": 1639624907000,
+      "contentHash": "9e218f0dd58c503e92254172fcf7e1a1",
+      "sourceName": "contracts/curvefi/ICurveFi_Gauge.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ICurveFi_Gauge"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/contracts/curvefi/ICurveFi_Minter.sol": {
+      "lastModificationDate": 1639624918000,
+      "contentHash": "64c09e8f81ab3a69ae56378003e756da",
+      "sourceName": "contracts/curvefi/ICurveFi_Minter.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ICurveFi_Minter"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/contracts/curvefi/ICurveFi_SwapY.sol": {
+      "lastModificationDate": 1639629797000,
+      "contentHash": "8bc04a83b8c222b31b493c2773e7ecd0",
+      "sourceName": "contracts/curvefi/ICurveFi_SwapY.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ICurveFi_SwapY"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/contracts/curvefi/IYERC20.sol": {
+      "lastModificationDate": 1639596964000,
+      "contentHash": "991659631e5c71d293b44b185e340940",
+      "sourceName": "contracts/curvefi/IYERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IYERC20"
+      ]
+    },
+    "/Volumes/WORK/000BlockChain/000Projects2/Samuel-IntegrateCurveFi/Vault_curvefi/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1639600551000,
+      "contentHash": "4cff8b2ea0d958750786b4e3ca308445",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    }
+  }
+}
